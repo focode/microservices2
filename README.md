@@ -20,5 +20,11 @@ you will get json data
 then try stopping any of the application either spotparking or spotparking1 , if any one of then is stopped the also you 
 get response from the another one.
 
+API gateway has been added for the micro services, to access the microservices from api gateway, build the api gateway and run it by java jar command 
+
+and access it from 
+
+http://localhost:9002/spotparking/spotparking/pincode
+
 please email me for any help regarding micro services on my email id : programarunesh@gmail
 
