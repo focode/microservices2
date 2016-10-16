@@ -8,5 +8,6 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     
+    
   server:
     waitTimeInMsWhenSyncEmpty: 0
