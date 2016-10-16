@@ -1,5 +1,7 @@
 package com.bits.client.rest;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -19,10 +21,10 @@ public class SpotParkingRestTemplateClient {
 	@Autowired
     private RestTemplate restTemplate;
 
-    public MessageWrapper<ParkingSpot> getParkingSpot(String pincode) {
+    public List<ParkingSpot> getParkingSpot(String pincode) {
 
-    	ParkingSpot parkingSpot = restTemplate.exchange("http://spotparking/spotparking/{pincode}",HttpMethod.GET,null,new ParameterizedTypeReference<ParkingSpot>() {}, pincode).getBody();
-        return new MessageWrapper<>(parkingSpot, "server called using eureka with rest template");
+    	List<ParkingSpot> parkingSpot = restTemplate.exchange("http://spotparking/spotparking/{pincode}",HttpMethod.GET,null,new ParameterizedTypeReference<List<ParkingSpot>>() {}, pincode).getBody();
+        return parkingSpot;
 
     }
 

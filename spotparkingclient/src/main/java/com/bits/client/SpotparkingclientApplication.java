@@ -15,8 +15,5 @@ public class SpotparkingclientApplication {
 	}
 	
 	
-	@Bean
-	public RestTemplate restTemplate() {
-	    return new RestTemplate();
-	}	
+	
 }
