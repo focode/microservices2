@@ -24,7 +24,7 @@ API gateway has been added for the micro services, to access the microservices f
 
 and access it from 
 
-http://localhost:9002/spotparking/spotparking/pincode
+http://localhost:9002/spotparking/pincode
 
 please email me for any help regarding micro services on my email id : programarunesh@gmail
 
