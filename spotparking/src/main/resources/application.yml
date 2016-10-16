@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spotparking
+
+server:
+  port: 7212
