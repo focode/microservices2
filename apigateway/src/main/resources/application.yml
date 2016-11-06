@@ -33,6 +33,13 @@ zuul:
       path: /spotparking/**
       stripPrefix: false
 ribbon:
-    readTimeout :5000
-    hystrixTimeout:4500
-    execTime:4000
+  eureka:
+    enabled: true
+    readTimeout: 5000
+    hystrixTimeout: 4500
+    execTime: 4000
+    
+spotparking:
+  ribbon:
+    ReadTimeout: 90000  
+    ConnectTimeout: 90000  

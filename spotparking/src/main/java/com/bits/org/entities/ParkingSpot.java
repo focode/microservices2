@@ -11,7 +11,7 @@ public class ParkingSpot {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) 
 	private Long Id;
-	private String ownerName;
+	private String ownerName;// user id , this will be unique across users
 	private String pincode;
 	private String houseNo;
 	private String streetName;
